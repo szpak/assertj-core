@@ -24,6 +24,7 @@ import org.junit.Test;
  * @author Alex Ruiz
  * @author Yvonne Wang
  */
+@org.junit.Ignore
 public class Files_newFolder_Test extends Files_TestCase {
 
   @Test

@@ -191,6 +191,8 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <argLine>${argLine}</argLine>
+	  <!--          <parallel>classes</parallel>
+	  <threadCount>10</threadCount> --> <!-- Mariusz and his PowerMockito tests... -->
         </configuration>
       </plugin>
       <plugin>
@@ -243,6 +245,20 @@
             </script>
           ]]></footer>
         </configuration>
+      </plugin>
+      <plugin>
+    	 <groupId>org.pitest</groupId>
+ 	 <artifactId>pitest-maven</artifactId>
+	 <version>1.1.11</version>
+ 	 <configuration>
+	   <targetClasses>
+             <param>org.assertj.core*</param>
+           </targetClasses>
+   	   <targetTests>
+  	      <param>org.assertj.core*</param>
+      	   </targetTests>
+	   <!--           <threads>4</threads> -->
+   	 </configuration>
       </plugin>
     </plugins>
     <pluginManagement>

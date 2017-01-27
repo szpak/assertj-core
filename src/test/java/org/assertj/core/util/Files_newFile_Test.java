@@ -30,6 +30,7 @@ import org.junit.rules.ExpectedException;
  * @author Alex Ruiz
  * @author Yvonne Wang
  */
+@org.junit.Ignore
 public class Files_newFile_Test extends Files_TestCase {
 
   @Rule
