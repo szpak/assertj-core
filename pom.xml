@@ -221,6 +221,25 @@
           ]]></footer>
         </configuration>
       </plugin>
+      <plugin>
+      	 <groupId>org.pitest</groupId>
+	 <artifactId>pitest-maven</artifactId>
+ 	 <version>1.1.8</version>
+ 	 <configuration>
+ 	   <targetClasses>
+             <param>org.assertj.core*</param>
+           </targetClasses>
+   	   <targetTests>
+  	      <param>org.assertj.core*</param>
+           </targetTests>
+	   <!--	   <verbose>true</verbose> -->
+	   <excludedClasses>
+	     <excludedClasses>org.assertj.core.api.SoftAssertionsTest</excludedClasses>
+	     <excludedClasses>org.assertj.core.util.Files_new**</excludedClasses>
+	   </excludedClasses>
+	   <!--           <threads>4</threads> -->
+   	 </configuration>
+       </plugin>
     </plugins>
     <pluginManagement>
       <plugins>
