@@ -236,6 +236,7 @@
 	   <excludedClasses>
 	     <excludedClasses>org.assertj.core.api.SoftAssertionsTest</excludedClasses>
 	     <excludedClasses>org.assertj.core.util.Files_**</excludedClasses>
+	     <excludedClasses>org.assertj.core.util.Closeables_closeQuietly_Test**</excludedClasses>
 	     <excludedClasses>org.assertj.core.internal.asm.**</excludedClasses>
 	     <excludedClasses>org.assertj.core.internal.cglib.**</excludedClasses>
 	   </excludedClasses>
