@@ -235,7 +235,7 @@
 	   <!--	   <verbose>true</verbose> -->
 	   <excludedClasses>
 	     <excludedClasses>org.assertj.core.api.SoftAssertionsTest</excludedClasses>
-	     <excludedClasses>org.assertj.core.util.Files_new**</excludedClasses>
+	     <excludedClasses>org.assertj.core.util.Files_**</excludedClasses>
 	     <excludedClasses>org.assertj.core.internal.asm.**</excludedClasses>
 	     <excludedClasses>org.assertj.core.internal.cglib.**</excludedClasses>
 	   </excludedClasses>
