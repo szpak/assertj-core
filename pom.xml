@@ -256,6 +256,10 @@
 	      <param>org.assertj.core*</param>
 	   </targetTests>
 <!--           <threads>4</threads> -->
+	   <excludedClasses>
+	     <excludedClasses>org.assertj.core.api.SoftAssertionsTest</excludedClasses>
+	     <excludedClasses>org.assertj.core.util.Files_**</excludedClasses>
+	   </excludedClasses>
 	 </configuration>
       </plugin>
     </plugins>
