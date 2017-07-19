@@ -236,6 +236,8 @@
 	   <excludedClasses>
 	     <excludedClasses>org.assertj.core.api.SoftAssertionsTest</excludedClasses>
 	     <excludedClasses>org.assertj.core.util.Files_new**</excludedClasses>
+	     <excludedClasses>org.assertj.core.internal.asm.**</excludedClasses>
+	     <excludedClasses>org.assertj.core.internal.cglib.**</excludedClasses>
 	   </excludedClasses>
 	   <!--           <threads>4</threads> -->
    	 </configuration>
